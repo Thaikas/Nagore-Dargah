@@ -47,10 +47,9 @@ require __DIR__ . '/includes/header.php';
         </div>
         <div class="timeline reveal">
             <div class="tl-item"><span class="day">Day 1 &middot; Opening</span><h3>Kodiyetram — Flag Hoisting</h3><p>The Uroos flag is ceremonially raised on the flagstaff, marking the commencement of the fourteen-day festival.</p></div>
-            <div class="tl-item"><span class="day">Days 2–6 &middot; Devotion</span><h3>Qiraat, Zikr &amp; Qawwali</h3><p>Continuous recitation of the Holy Qur'an, assemblies of remembrance and soul-stirring Sufi qawwali through the nights.</p></div>
-            <div class="tl-item"><span class="day">Days 7–10 &middot; Hospitality</span><h3>Niyyat, Fathiha &amp; Annadhanam</h3><p>Devotees fulfil their vows; Fathiha is offered and community feasts (annadhanam) are served to all, without distinction.</p></div>
-            <div class="tl-item"><span class="day">Days 11–13 &middot; Sandal</span><h3>Sandal Anointment</h3><p>The sacred sandalwood paste is prepared and anointment ceremonies are conducted by the board of trustees.</p></div>
-            <div class="tl-item"><span class="day">Day 14 &middot; Climax</span><h3>Santhanakoodu Procession</h3><p>Decorated caskets of sandal paste are carried in grand procession through the streets, the culminating act of the Uroos.</p></div>
+            <div class="tl-item"><span class="day">Days 2–9 &middot; Devotion</span><h3>Qiraat, Zikr, Rathib, Islamic Concert &amp; Qawwali</h3><p>Continuous recitation of the Holy Qur'an, assemblies of remembrance, Rathib, Islamic Concerts, and soul-stirring Sufi qawwali through the nights. Devotees fulfil their vows; Fathiha is offered and community feasts (annadhanam) are served to all, without distinction.</p></div>
+            <div class="tl-item"><span class="day">Day 10 &middot; Sandal</span><h3>Sandal Anointment</h3><p>The sacred sandalwood paste is prepared and anointment ceremonies are conducted by the board of trustees.</p></div>
+            <div class="tl-item"><span class="day">Day 14 &middot; Thamam</span><h3>Dismounting of the Flag</h3><p>Flag will be dismounted after Isha prayers with Fathiha Majlis and Dua.</p></div>
         </div>
     </div>
 </section>

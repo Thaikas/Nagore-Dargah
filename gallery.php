@@ -1,19 +1,56 @@
 <?php
 $page_title = 'Gallery & Dargah Tour';
-$page_desc  = 'A visual tour of Nagore Dargah Shariff — the dome, the five minarets, sacred tanks, the flagstaff and the Uroos festival.';
+$page_desc  = 'A visual tour of Nagore Dargah Shariff — the five minarets, sacred chain, double coconut, holy mirror, kitchen, and the Peer Mandapam.';
 require __DIR__ . '/includes/header.php';
 
-// Gallery tiles — captions describe what each real photo should depict.
+// Gallery tiles with Tamil translations and descriptions
 $tiles = [
-    ['g1','tall','The Sacred Shrine','The holy tomb (Roza) of Nagore Andavar'],
-    ['g2','','Periya Manara','The 131 ft tallest minaret'],
-    ['g3','','The Central Dome','Golden dome over the shrine'],
-    ['g4','','Sacred Tanks','Pilgrim ponds within the complex'],
-    ['g5','tall','The Flagstaff','Kodimaram where the Uroos flag is hoisted'],
-    ['g6','','Santhanakoodu','Sandal procession during Uroos'],
-    ['g2','','Night Illumination','The Dargah lit during the festival'],
-    ['g1','','The Main Gateway','Entrance to the Dargah complex'],
-    ['g4','','Devotees at Prayer','Pilgrims of every faith'],
+    ['g1', 'tall', '5 Minarats History', '5 மினாராக்கள் வரலாறு', 'The five historic minarets of Nagore Dargah.'],
+    ['g2', '',     'Chain',               'சங்கிலி',               'The historic iron chain of penance.'],
+    ['g3', '',     'Kombu Thaengai',      'கொம்பு தேங்காய்',        'The rare double coconut shell relic.'],
+    ['g4', 'tall', 'Mirror Nahoor shareef', 'புனித கண்ணாடி',        'The miracle mirror that saved a sinking ship.'],
+    ['g5', '',     'Mudhubak shareef',    'முதுபக் ஷரீஃப்',        'The holy kitchen preparing blessed sweet rice.'],
+    ['g6', '',     'Peer Mandabam',       'பீர் மண்டபம்',          'The ceremonial pavilion of the Peer Sahib.'],
+    ['g2', '',     'Ya Hussain Masjid',   'யா ஹுஸைன் மஸ்ஜித்',     'The congregation mosque within the complex.'],
+];
+
+// Rich tour step details
+$tour_steps = [
+    [
+        'title' => '5 Minarats History',
+        'title_ta' => '5 மினாராக்கள் வரலாறு',
+        'desc' => 'The Dargah features five distinct minarets built by royal and noble patrons. The tallest, Periya Manara (131 ft), was built by the Maratha King Achutappa Nayak, demonstrating the deep interfaith history and royal protection of the shrine.'
+    ],
+    [
+        'title' => 'Chain',
+        'title_ta' => 'சங்கிலி',
+        'desc' => 'A sacred iron chain hung inside the Dargah complex. It is historically linked to the spiritual penance of the saint, who would bind himself during intense meditation. Today, pilgrims touch the chain seeking spiritual connection and blessings.'
+    ],
+    [
+        'title' => 'Kombu Thaengai',
+        'title_ta' => 'கொம்பு தேங்காய்',
+        'desc' => 'A highly revered botanical curiosity: a rare double-coconut (horned coconut) shell preserved in the shrine. Devotees honor it as a unique sign of nature\'s divinity and the spiritual aura surrounding the saint.'
+    ],
+    [
+        'title' => 'Mirror Nahoor shareef',
+        'title_ta' => 'புனித கண்ணாடி',
+        'desc' => 'A sacred mirror associated with the saint\'s famous sea miracle. Legend tells that a ship was sinking due to a leak; the saint threw his mirror into the ocean, which miraculously covered the breach and saved the merchant\'s cargo and crew.'
+    ],
+    [
+        'title' => 'Mudhubak shareef',
+        'title_ta' => 'முதுபக் ஷரீஃப்',
+        'desc' => 'The traditional holy kitchen of the Dargah where sweet rice (Tabarruk) is cooked in giant copper vessels. It symbolizes the dargah\'s open-door hospitality, serving warm meals to every pilgrim regardless of background.'
+    ],
+    [
+        'title' => 'Peer Mandabam',
+        'title_ta' => 'பீர் மண்டபம்',
+        'desc' => 'The ceremonial pavilion where the Peer Sahib (the spiritual leader and hereditary descendant) sits in silent contemplation during the annual Kanduri Uroos festival, blessing the thousands of devotees who gather.'
+    ],
+    [
+        'title' => 'Ya Hussain Masjid',
+        'title_ta' => 'யா ஹுஸைன் மஸ்ஜித்',
+        'desc' => 'The historic congregation mosque located within the Dargah grounds. Dedicated to the memory of Hazrat Imam Hussain (R.A.), it provides a quiet sanctuary for daily prayers and spiritual discourse.'
+    ]
 ];
 ?>
 
@@ -22,7 +59,7 @@ $tiles = [
     <div class="container">
         <p class="breadcrumb"><a href="index.php">Home</a> &nbsp;/&nbsp; Gallery &amp; Tour</p>
         <h1>Gallery &amp; Dargah Tour</h1>
-        <p>A visual journey through the shrine, its minarets, tanks and the radiance of the Uroos</p>
+        <p>A visual journey through the sacred relics, historic architecture, and holy sites of Nagore Dargah</p>
     </div>
 </section>
 
@@ -31,7 +68,7 @@ $tiles = [
         <div class="section-head reveal">
             <span class="eyebrow">Photo Gallery</span>
             <h2>Glimpses of Nagore Dargah</h2>
-            <p>The placeholders below are ready to be replaced with official photographs of the Dargah.</p>
+            <p>A collection of key landmarks and sacred items revered at Nagore Dargah Shariff.</p>
         </div>
         <div class="gallery reveal">
             <?php foreach ($tiles as $t): ?>
@@ -45,7 +82,11 @@ $tiles = [
                             <rect x="85" y="50" width="7" height="40" rx="2"/><circle cx="88.5" cy="46" r="4"/>
                         </g>
                     </svg>
-                    <figcaption><strong><?= e($t[2]) ?></strong><br><small style="opacity:.85;font-weight:300"><?= e($t[3]) ?></small></figcaption>
+                    <figcaption>
+                        <strong><?= e($t[2]) ?></strong>
+                        <span style="display:block;font-size:0.75rem;color:var(--gold-400);margin-top:2px;"><?= e($t[3]) ?></span>
+                        <small style="opacity:.85;font-weight:300;font-size:0.78rem;display:block;margin-top:4px;"><?= e($t[4]) ?></small>
+                    </figcaption>
                 </figure>
             <?php endforeach; ?>
         </div>
@@ -57,14 +98,17 @@ $tiles = [
         <div class="section-head reveal">
             <span class="eyebrow">Guided Walk</span>
             <h2>The Dargah Tour</h2>
-            <p>Follow the path a pilgrim takes through the sacred complex of Nagore.</p>
+            <p>Explore the spiritual landmarks and profound heritage of the Dargah complex.</p>
         </div>
         <div class="tour reveal" style="max-width:860px;margin:0 auto">
-            <div class="tour__step"><div><h4>The Main Gateway</h4><p>Enter through the grand archway and step into a complex shaped by five centuries of devotion.</p></div></div>
-            <div class="tour__step"><div><h4>The Sacred Tanks</h4><p>Pause at the holy ponds where pilgrims gather before approaching the shrine.</p></div></div>
-            <div class="tour__step"><div><h4>The Roza (Holy Tomb)</h4><p>Reach the heart of the Dargah — the resting place of Hazrat Shahul Hameed Qadir Wali (Q.S.) beneath the central dome.</p></div></div>
-            <div class="tour__step"><div><h4>The Five Minarets</h4><p>Stand beneath the towering Periya Manara and the four manaras that crown the four cardinal points.</p></div></div>
-            <div class="tour__step"><div><h4>The Flagstaff (Kodimaram)</h4><p>Behold the great mast where the Uroos flag is hoisted to open the annual Kanduri festival.</p></div></div>
+            <?php foreach ($tour_steps as $step): ?>
+                <div class="tour__step">
+                    <div>
+                        <h4><?= e($step['title']) ?> <span style="font-weight:400; font-size:1.1rem; color:var(--gold-600); margin-left:0.5rem;">— <?= e($step['title_ta']) ?></span></h4>
+                        <p><?= e($step['desc']) ?></p>
+                    </div>
+                </div>
+            <?php endforeach; ?>
         </div>
         <div class="text-center mt-3 reveal">
             <a href="live-tv.php" target="_blank" rel="noopener" class="btn btn--primary btn--lg">
