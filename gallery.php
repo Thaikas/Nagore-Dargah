@@ -5,13 +5,13 @@ require __DIR__ . '/includes/header.php';
 
 // Gallery tiles with Tamil translations, descriptions and YouTube video IDs
 $tiles = [
-    ['g1', 'tall', '5 Minarats History', '5 மினாராக்கள் வரலாறு', 'The five historic minarets of Nagore Dargah.', '0qA5lUjozRo'],
-    ['g2', '',     'Chain',               'சங்கிலி',               'The historic iron chain of penance.', 'ofprwfr50-0'],
-    ['g3', '',     'Kombu Thaengai',      'கொம்பு தேங்காய்',        'The rare double coconut shell relic.', '8ttKbS0_HJs'],
-    ['g4', 'tall', 'Mirror Nahoor shareef', 'புனித கண்ணாடி',        'The miracle mirror that saved a sinking ship.', 'U-i5hDzyQyQ'],
-    ['g5', '',     'Mudhubak shareef',    'முதுபக் ஷரீஃப்',        'The holy kitchen preparing blessed sweet rice.', 'NggrToXZTGM'],
-    ['g6', '',     'Peer Mandabam',       'பீர் மண்டபம்',          'The ceremonial pavilion of the Peer Sahib.', 'tIXEJYt4oGg'],
-    ['g2', '',     'Ya Hussain Masjid',   'யா ஹுஸைன் மஸ்ஜித்',     'The congregation mosque within the complex.', 'KKM0VFN2wE4'],
+    ['g1', '', '5 Minarats History', '5 மினாராக்கள் வரலாறு', 'The five historic minarets of Nagore Dargah.', '0qA5lUjozRo'],
+    ['g2', '', 'Chain',               'சங்கிலி',               'The historic iron chain of penance.', 'ofprwfr50-0'],
+    ['g3', '', 'Kombu Thaengai',      'கொம்பு தேங்காய்',        'The rare double coconut shell relic.', '8ttKbS0_HJs'],
+    ['g4', '', 'Mirror Nahoor shareef', 'புனித கண்ணாடி',        'The miracle mirror that saved a sinking ship.', 'U-i5hDzyQyQ'],
+    ['g5', '', 'Mudhubak shareef',    'முதுபக் ஷரீஃப்',        'The holy kitchen preparing blessed sweet rice.', 'NggrToXZTGM'],
+    ['g6', '', 'Peer Mandabam',       'பீர் மண்டபம்',          'The ceremonial pavilion of the Peer Sahib.', 'tIXEJYt4oGg'],
+    ['g2', '', 'Ya Hussain Masjid',   'யா ஹுஸைன் மஸ்ஜித்',     'The congregation mosque within the complex.', 'KKM0VFN2wE4'],
 ];
 
 // Rich tour step details with YouTube video IDs
