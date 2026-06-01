@@ -3,53 +3,60 @@ $page_title = 'Gallery & Dargah Tour';
 $page_desc  = 'A visual tour of Nagore Dargah Shariff — the five minarets, sacred chain, double coconut, holy mirror, kitchen, and the Peer Mandapam.';
 require __DIR__ . '/includes/header.php';
 
-// Gallery tiles with Tamil translations and descriptions
+// Gallery tiles with Tamil translations, descriptions and YouTube video IDs
 $tiles = [
-    ['g1', 'tall', '5 Minarats History', '5 மினாராக்கள் வரலாறு', 'The five historic minarets of Nagore Dargah.'],
-    ['g2', '',     'Chain',               'சங்கிலி',               'The historic iron chain of penance.'],
-    ['g3', '',     'Kombu Thaengai',      'கொம்பு தேங்காய்',        'The rare double coconut shell relic.'],
-    ['g4', 'tall', 'Mirror Nahoor shareef', 'புனித கண்ணாடி',        'The miracle mirror that saved a sinking ship.'],
-    ['g5', '',     'Mudhubak shareef',    'முதுபக் ஷரீஃப்',        'The holy kitchen preparing blessed sweet rice.'],
-    ['g6', '',     'Peer Mandabam',       'பீர் மண்டபம்',          'The ceremonial pavilion of the Peer Sahib.'],
-    ['g2', '',     'Ya Hussain Masjid',   'யா ஹுஸைன் மஸ்ஜித்',     'The congregation mosque within the complex.'],
+    ['g1', 'tall', '5 Minarats History', '5 மினாராக்கள் வரலாறு', 'The five historic minarets of Nagore Dargah.', '0qA5lUjozRo'],
+    ['g2', '',     'Chain',               'சங்கிலி',               'The historic iron chain of penance.', 'ofprwfr50-0'],
+    ['g3', '',     'Kombu Thaengai',      'கொம்பு தேங்காய்',        'The rare double coconut shell relic.', '8ttKbS0_HJs'],
+    ['g4', 'tall', 'Mirror Nahoor shareef', 'புனித கண்ணாடி',        'The miracle mirror that saved a sinking ship.', 'U-i5hDzyQyQ'],
+    ['g5', '',     'Mudhubak shareef',    'முதுபக் ஷரீஃப்',        'The holy kitchen preparing blessed sweet rice.', 'NggrToXZTGM'],
+    ['g6', '',     'Peer Mandabam',       'பீர் மண்டபம்',          'The ceremonial pavilion of the Peer Sahib.', 'tIXEJYt4oGg'],
+    ['g2', '',     'Ya Hussain Masjid',   'யா ஹுஸைன் மஸ்ஜித்',     'The congregation mosque within the complex.', 'KKM0VFN2wE4'],
 ];
 
-// Rich tour step details
+// Rich tour step details with YouTube video IDs
 $tour_steps = [
     [
         'title' => '5 Minarats History',
         'title_ta' => '5 மினாராக்கள் வரலாறு',
-        'desc' => 'The Dargah features five distinct minarets built by royal and noble patrons. The tallest, Periya Manara (131 ft), was built by the Maratha King Achutappa Nayak, demonstrating the deep interfaith history and royal protection of the shrine.'
+        'desc' => 'The Dargah features five distinct minarets built by royal and noble patrons. The tallest, Periya Manara (131 ft), was built by the Maratha King Achutappa Nayak, demonstrating the deep interfaith history and royal protection of the shrine.',
+        'id' => '0qA5lUjozRo'
     ],
     [
         'title' => 'Chain',
         'title_ta' => 'சங்கிலி',
-        'desc' => 'A sacred iron chain hung inside the Dargah complex. It is historically linked to the spiritual penance of the saint, who would bind himself during intense meditation. Today, pilgrims touch the chain seeking spiritual connection and blessings.'
+        'desc' => 'A sacred iron chain hung inside the Dargah complex. It is historically linked to the spiritual penance of the saint, who would bind himself during intense meditation. Today, pilgrims touch the chain seeking spiritual connection and blessings.',
+        'id' => 'ofprwfr50-0'
     ],
     [
         'title' => 'Kombu Thaengai',
         'title_ta' => 'கொம்பு தேங்காய்',
-        'desc' => 'A highly revered botanical curiosity: a rare double-coconut (horned coconut) shell preserved in the shrine. Devotees honor it as a unique sign of nature\'s divinity and the spiritual aura surrounding the saint.'
+        'desc' => 'A highly revered botanical curiosity: a rare double-coconut (horned coconut) shell preserved in the shrine. Devotees honor it as a unique sign of nature\'s divinity and the spiritual aura surrounding the saint.',
+        'id' => '8ttKbS0_HJs'
     ],
     [
         'title' => 'Mirror Nahoor shareef',
         'title_ta' => 'புனித கண்ணாடி',
-        'desc' => 'A sacred mirror associated with the saint\'s famous sea miracle. Legend tells that a ship was sinking due to a leak; the saint threw his mirror into the ocean, which miraculously covered the breach and saved the merchant\'s cargo and crew.'
+        'desc' => 'A sacred mirror associated with the saint\'s famous sea miracle. Legend tells that a ship was sinking due to a leak; the saint threw his mirror into the ocean, which miraculously covered the breach and saved the merchant\'s cargo and crew.',
+        'id' => 'U-i5hDzyQyQ'
     ],
     [
         'title' => 'Mudhubak shareef',
         'title_ta' => 'முதுபக் ஷரீஃப்',
-        'desc' => 'The traditional holy kitchen of the Dargah where sweet rice (Tabarruk) is cooked in giant copper vessels. It symbolizes the dargah\'s open-door hospitality, serving warm meals to every pilgrim regardless of background.'
+        'desc' => 'The traditional holy kitchen of the Dargah where sweet rice (Tabarruk) is cooked in giant copper vessels. It symbolizes the dargah\'s open-door hospitality, serving warm meals to every pilgrim regardless of background.',
+        'id' => 'NggrToXZTGM'
     ],
     [
         'title' => 'Peer Mandabam',
         'title_ta' => 'பீர் மண்டபம்',
-        'desc' => 'The ceremonial pavilion where the Peer Sahib (the spiritual leader and hereditary descendant) sits in silent contemplation during the annual Kanduri Uroos festival, blessing the thousands of devotees who gather.'
+        'desc' => 'The ceremonial pavilion where the Peer Sahib (the spiritual leader and hereditary descendant) sits in silent contemplation during the annual Kanduri Uroos festival, blessing the thousands of devotees who gather.',
+        'id' => 'tIXEJYt4oGg'
     ],
     [
         'title' => 'Ya Hussain Masjid',
         'title_ta' => 'யா ஹுஸைன் மஸ்ஜித்',
-        'desc' => 'The historic congregation mosque located within the Dargah grounds. Dedicated to the memory of Hazrat Imam Hussain (R.A.), it provides a quiet sanctuary for daily prayers and spiritual discourse.'
+        'desc' => 'The historic congregation mosque located within the Dargah grounds. Dedicated to the memory of Hazrat Imam Hussain (R.A.), it provides a quiet sanctuary for daily prayers and spiritual discourse.',
+        'id' => 'KKM0VFN2wE4'
     ]
 ];
 ?>
@@ -72,22 +79,13 @@ $tour_steps = [
         </div>
         <div class="gallery reveal">
             <?php foreach ($tiles as $t): ?>
-                <figure class="gallery__item <?= e($t[0]) ?> <?= e($t[1]) ?>">
-                    <svg class="ph-art" viewBox="0 0 120 120" aria-hidden="true">
-                        <g fill="rgba(255,255,255,.85)">
-                            <path d="M60 26c-7 8-10 15-10 22 0 1-5 6-5 14h30c0-8-5-13-5-14 0-7-3-14-10-22z"/>
-                            <path d="M42 90V62a18 18 0 0 1 36 0v28z"/>
-                            <rect x="55" y="72" width="10" height="18" rx="5" fill="rgba(7,48,31,.4)"/>
-                            <rect x="28" y="50" width="7" height="40" rx="2"/><circle cx="31.5" cy="46" r="4"/>
-                            <rect x="85" y="50" width="7" height="40" rx="2"/><circle cx="88.5" cy="46" r="4"/>
-                        </g>
-                    </svg>
+                <a class="gallery__item <?= e($t[0]) ?> <?= e($t[1]) ?>" href="https://youtu.be/<?= e($t[5]) ?>" target="_blank" rel="noopener" style="background-image: url('https://img.youtube.com/vi/<?= e($t[5]) ?>/hqdefault.jpg'); background-size: cover; background-position: center;">
                     <figcaption>
                         <strong><?= e($t[2]) ?></strong>
                         <span style="display:block;font-size:0.75rem;color:var(--gold-400);margin-top:2px;"><?= e($t[3]) ?></span>
                         <small style="opacity:.85;font-weight:300;font-size:0.78rem;display:block;margin-top:4px;"><?= e($t[4]) ?></small>
                     </figcaption>
-                </figure>
+                </a>
             <?php endforeach; ?>
         </div>
     </div>
@@ -106,6 +104,9 @@ $tour_steps = [
                     <div>
                         <h4><?= e($step['title']) ?> <span style="font-weight:400; font-size:1.1rem; color:var(--gold-600); margin-left:0.5rem;">— <?= e($step['title_ta']) ?></span></h4>
                         <p><?= e($step['desc']) ?></p>
+                        <a href="https://youtu.be/<?= e($step['id']) ?>" target="_blank" rel="noopener" class="card__link" style="margin-top:0.4rem;">
+                            <svg class="ico" viewBox="0 0 24 24" aria-hidden="true" style="fill:currentColor;vertical-align:-0.15em;"><path d="M8 5v14l11-7z"/></svg> Watch Documentary Video &rarr;
+                        </a>
                     </div>
                 </div>
             <?php endforeach; ?>
