@@ -5,7 +5,7 @@ require __DIR__ . '/includes/header.php';
 
 // Gallery tiles with Tamil translations, descriptions and YouTube video IDs
 $tiles = [
-    ['g1', '', '5 Minarats History', '5 மினாராக்கள் வரலாறு', 'The five historic minarets of Nagore Dargah.', '0qA5lUjozRo'],
+    ['g1', '', '5 Minarats History', '5 மினாராக்கள் வரலாறு', 'The five historic minarets of Nagore Dargah.', '0qA5lUJozRo'],
     ['g2', '', 'Chain',               'சங்கிலி',               'The historic iron chain of penance.', 'ofprwfr50-0'],
     ['g3', '', 'Kombu Thaengai',      'கொம்பு தேங்காய்',        'The rare double coconut shell relic.', '8ttKbS0_HJs'],
     ['g4', '', 'Mirror Nahoor shareef', 'புனித கண்ணாடி',        'The miracle mirror that saved a sinking ship.', 'U-i5hDzyQyQ'],
@@ -20,7 +20,7 @@ $tour_steps = [
         'title' => '5 Minarats History',
         'title_ta' => '5 மினாராக்கள் வரலாறு',
         'desc' => 'The Dargah features five distinct minarets built by royal and noble patrons. The tallest, Periya Manara (131 ft), was built by the Maratha King Achutappa Nayak, demonstrating the deep interfaith history and royal protection of the shrine.',
-        'id' => '0qA5lUjozRo'
+        'id' => '0qA5lUJozRo'
     ],
     [
         'title' => 'Chain',

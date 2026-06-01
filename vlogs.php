@@ -7,7 +7,7 @@ $vlogs = [
     [
         'title' => '5 Minarats History',
         'desc'  => '5 மினாராக்கள் வரலாறு',
-        'id'    => '0qA5lUjozRo'
+        'id'    => '0qA5lUJozRo'
     ],
     [
         'title' => 'Chain',
