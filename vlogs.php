@@ -4,12 +4,41 @@ $page_desc  = 'Watch vlogs, documentaries and devotional videos about Nagore Dar
 require __DIR__ . '/includes/header.php';
 
 $vlogs = [
-    ['Uroos Mubarak Highlights', 'Scenes from the annual Kanduri festival at Nagore.'],
-    ['Inside the Dargah', 'A walk through the shrine, dome and the five minarets.'],
-    ['The Santhanakoodu Procession', 'The sandalwood procession that crowns the Uroos.'],
-    ['Story of Nagore Andavar', 'The life and miracles of Hazrat Shahul Hameed (Q.S.).'],
-    ['Qawwali Nights', 'Devotional Sufi music at the shrine.'],
-    ['A Pilgrim&rsquo;s Journey', 'Devotees share their experience of Nagore.'],
+    [
+        'title' => '5 Minarats History',
+        'desc'  => '5 மினாராக்கள் வரலாறு',
+        'id'    => '0qA5lUjozRo'
+    ],
+    [
+        'title' => 'Chain',
+        'desc'  => 'சங்கிலி',
+        'id'    => 'ofprwfr50-0'
+    ],
+    [
+        'title' => 'Kombu Thaengai',
+        'desc'  => 'கொம்பு தேங்காய்',
+        'id'    => '8ttKbS0_HJs'
+    ],
+    [
+        'title' => 'Mirror Nahoor shareef',
+        'desc'  => 'புனித கண்ணாடி',
+        'id'    => 'U-i5hDzyQyQ'
+    ],
+    [
+        'title' => 'Mudhubak shareef',
+        'desc'  => 'முதுபக் ஷரீஃப்',
+        'id'    => 'NggrToXZTGM'
+    ],
+    [
+        'title' => 'Peer Mandabam',
+        'desc'  => 'பீர் மண்டபம்',
+        'id'    => 'tIXEJYt4oGg'
+    ],
+    [
+        'title' => 'Ya Hussain Masjid',
+        'desc'  => 'யா ஹுஸைன் மஸ்ஜித்',
+        'id'    => 'KKM0VFN2wE4'
+    ]
 ];
 ?>
 
@@ -27,17 +56,17 @@ $vlogs = [
         <div class="section-head reveal">
             <span class="eyebrow">Watch</span>
             <h2>Vlogs &amp; Videos</h2>
-            <p>Replace these cards with links to official videos from the Dargah's YouTube channel.</p>
+            <p>Explore the sacred heritage and historic relics of Nagore Dargah through these documentary videos.</p>
         </div>
         <div class="grid grid--3">
             <?php foreach ($vlogs as $v): ?>
-                <a class="vlog reveal" href="<?= e($SOCIAL['youtube']) ?>" target="_blank" rel="noopener">
-                    <div class="vlog__thumb">
+                <a class="vlog reveal" href="https://youtu.be/<?= e($v['id']) ?>" target="_blank" rel="noopener">
+                    <div class="vlog__thumb" style="background-image: url('https://img.youtube.com/vi/<?= e($v['id']) ?>/hqdefault.jpg'); background-size: cover; background-position: center;">
                         <span class="vlog__play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
                     </div>
                     <div class="vlog__body">
-                        <h4><?= $v[0] ?></h4>
-                        <p><?= $v[1] ?></p>
+                        <h4><?= e($v['title']) ?></h4>
+                        <p><?= e($v['desc']) ?></p>
                     </div>
                 </a>
             <?php endforeach; ?>
